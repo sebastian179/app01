@@ -1,0 +1,48 @@
+Diccionario de Datos
+A.
+
+Alfanumerico= {Letras|Numerico} 
+artf_numero_modelo= {Numerico}
+artf_precio= {Decimal}
+Articulo= @num_interno + @suc_id
+ARTICULO={Articulo}
+ARTICULO-FABRICANTE= @fab_id + Articulo + artf_numero_modelo + artf_precio
+
+C.
+cat_id= { Numerico }
+cat_descripcion= {Alfanumerico}
+CATEGORIA= @cat_id + cat_descripcion
+
+D.
+Decimal= {Numerico} + " , " + 2{Numerico}2
+
+E.
+emp_nombre = {Letras}
+emp_num = {Numerico}
+emp_apellido = {Letras}
+emp_domicilio = {Alfanumerico}
+EMPLEADO = @emp_num + @suc_id + emp_apellido + emp_nombre + emp_domicilio
+
+
+F.
+fab_id= { Numerico }
+fab_direccion = {Alfanumerico}
+fab_razonsocial= { Alfanumerico }
+FABRICANTE= @fab_id + fab_razonsocial + fab_direccion
+
+L.
+Letras= [A-Z | a-z | |]
+
+N.
+num_interno = {Numerico}
+Numerico= [0-9]
+
+S.
+suc_id = { Numerico }
+suc_nombre = { Alfanumerico }
+SUCURSAL= @suc_id + suc_nombre
+
+
+
+
+
